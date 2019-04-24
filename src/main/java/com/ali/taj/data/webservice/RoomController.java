@@ -1,0 +1,34 @@
+package com.ali.taj.data.webservice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ali.taj.data.entity.Room;
+import com.ali.taj.data.repository.roomRepository;
+
+@RestController
+public class RoomController {
+	@Autowired
+	private roomRepository repository;
+
+	@RequestMapping(value="/rooms", method= RequestMethod.GET)
+	List<Room> findAll(@RequestParam(required=false) String roomNumber){
+		List<Room> rooms = new ArrayList<>();
+		if(null==roomNumber){
+			Iterable<Room> results = this.repository.findAll();
+			results.forEach(room-> {rooms.add(room);});
+		}else{
+			Room room = this.repository.findByNumber(Integer.parseInt(roomNumber));
+			if(null!=room) {
+				rooms.add(room);
+			}
+		}
+		return rooms;
+	}
+}
