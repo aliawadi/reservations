@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.ali.taj.data.entity.Room;
 
 @Repository
-public interface roomRepository  extends CrudRepository<Room,Long> {
+public interface RoomRepository extends CrudRepository<Room,Long> {
 	Room findByNumber(int number)										;
 }

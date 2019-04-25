@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ali.taj.data.entity.Room;
-import com.ali.taj.data.repository.roomRepository;
+import com.ali.taj.data.repository.RoomRepository;
 
 @RestController
 public class RoomController {
 	@Autowired
-	private roomRepository repository;
+	private RoomRepository repository;
 
 	@RequestMapping(value="/rooms", method= RequestMethod.GET)
 	List<Room> findAll(@RequestParam(required=false) String roomNumber){
