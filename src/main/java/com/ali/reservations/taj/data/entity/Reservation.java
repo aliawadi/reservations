@@ -1,4 +1,4 @@
-package com.ali.taj.data.entity;
+package com.ali.reservations.taj.data.entity;
 
 
 import javax.persistence.Column;

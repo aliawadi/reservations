@@ -1,5 +1,5 @@
 
-package com.ali.taj.business.service;
+package com.ali.reservations.taj.business.service;
 
 
 import java.util.ArrayList;
@@ -12,13 +12,13 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ali.taj.business.domain.RoomReservation;
-import com.ali.taj.data.entity.Guest;
-import com.ali.taj.data.entity.Reservation;
-import com.ali.taj.data.entity.Room;
-import com.ali.taj.data.repository.GuestRepository;
-import com.ali.taj.data.repository.ReservationRepository;
-import com.ali.taj.data.repository.RoomRepository;
+import com.ali.reservations.taj.business.domain.RoomReservation;
+import com.ali.reservations.taj.data.entity.Guest;
+import com.ali.reservations.taj.data.entity.Reservation;
+import com.ali.reservations.taj.data.entity.Room;
+import com.ali.reservations.taj.data.repository.GuestRepository;
+import com.ali.reservations.taj.data.repository.ReservationRepository;
+import com.ali.reservations.taj.data.repository.RoomRepository;
 
 @Service
 public class ReservationService {

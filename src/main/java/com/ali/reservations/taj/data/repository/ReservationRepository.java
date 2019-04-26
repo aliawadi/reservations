@@ -1,6 +1,7 @@
-package com.ali.taj.data.repository;
+package com.ali.reservations.taj.data.repository;
 
-import com.ali.taj.data.entity.Reservation;
+import com.ali.reservations.taj.data.entity.Reservation;
+
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

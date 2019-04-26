@@ -1,4 +1,4 @@
-package com.ali.taj.data.webservice;
+package com.ali.reservations.taj.data.webservice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ali.taj.data.entity.Room;
-import com.ali.taj.data.repository.RoomRepository;
+import com.ali.reservations.taj.data.entity.Room;
+import com.ali.reservations.taj.data.repository.RoomRepository;
 
 @RestController
 public class RoomController {

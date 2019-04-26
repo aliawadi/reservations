@@ -1,4 +1,4 @@
-package com.ali.taj.business.domain;
+package com.ali.reservations.taj.business.domain;
 
 import java.util.Date;
 
